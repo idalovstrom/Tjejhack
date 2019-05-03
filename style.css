@@ -1,3 +1,34 @@
 body{
-	font-family: Times New Roman;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.footer{
+	background-color: black;
+	width: 100%;
+	height: 100px;
+	opacity: 0.7;
+	text-align: center;
+  	padding-top: 40px;
+  	color: white;
+}
+
+.karuselltext{
+	font-size: 70px;
+	font-weight: bold;
+}
+.karsuelltextmindre{
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.divfix{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.knapp{
+	background-color: #64458b;
+	width: 300px;
+	height: 70px;
+	font-size: 25px;
 }
