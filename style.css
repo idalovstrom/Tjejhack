@@ -1,5 +1,6 @@
-body{
+body,html{
 	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
 }
 
 .footer{
@@ -40,6 +41,40 @@ body{
 	margin-top: 20px;
 }
 
+.knappar{
+	background-color: #64458b;
+	height: 50px;
+	width: 250px;
+	font-size: 15px;
+	border: solid black 1px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
 .tipsbilder{
 	width: 150px;
+	margin-top: 20px;
+	margin-left: 20px;
+	border-radius: 50%;
+}
+
+.mellanrum{
+	margin: 40px 0px 20px 0px;s
+}
+
+.tips{
+	margin-bottom: 25px
+}
+
+.bilder{
+	width: 100%;
+}
+
+.card{
+	border: none;
+	margin-left: 50px;
+}
+
+.fixfix{
+	margin-left: 50px;
 }
