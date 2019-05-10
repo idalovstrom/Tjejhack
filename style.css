@@ -75,6 +75,16 @@ body,html{
 	margin-left: 50px;
 }
 
+.card2{
+	border: none;
+}
+
 .fixfix{
 	margin-left: 50px;
+}
+
+.logofix{
+	height: 40px;
+	position: relative;
+	left: 800px;
 }

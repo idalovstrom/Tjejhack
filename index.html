@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+
+	<!-- Taget ifrån Bootsrtap för att få finare allt -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Quiz</title>
+
+</head>
+<body class="container bg">
+	<div class="ruta">
+		<h1 class="mitten">Quiz om Python!</h1>
+		<h5 class="mitten">Ett grundläggande frågor om python</h5>
+		<br>
+		<div class="mitten">
+			<button class="btn btn-success fint">Starta Quiz</button>
+		</div>
+	</div>
+	<div id="sQ1" class="ruta">
+		<h4>Fråga 1:</h4>
+		<label class="namn">Hur lyder mitt fullstndiga namn? </label><br>
+		<input type="radio" name="namn" value="felNamnEtt"> Ida Annie Lövström <br>
+		<input type="radio" name="namn" value="rattNamn" id="rattNamn"> Ida Nikolina Lövström <br>
+		<input type="radio" name="namn" value="felNamnTva"> Ida Sara Lövström <br>
+	</div>
+	<div id="sQ2" class="ruta2">
+		<h4>Fråga 2:</h4>
+		<label class="bdayen">Vilket datum är jag född? </label><br>
+		<button class="btn btn-secondary bday" value="rattBday" id="rattAlder">14 april</button>
+		<button class="btn btn-secondary bday" value="felBdayEtt">14 maj</button>
+		<button class="btn btn-secondary bday" value="felBdayTva">14 september</button>
+		<button class="btn btn-secondary bday" value="felBdayTre">14 november</button>
+		<br><br>
+	</div>
+	<div id="sQ3" class="ruta2">
+		<h4>Fråga 3:</h4>
+		<label class="langd">Hur lång är jag? </label><br>
+		<input type="radio" name="langd" value="felLangdEtt"> 1,63 m. <br>
+		<input type="radio" name="langd" value="felLangdTva"> 1,65 m. <br>
+		<input type="radio" name="langd" value="rattlangd" id="rattLangd"> 1,67 m. <br>
+		<input type="radio" name="langd" value="felLangdTre"> 1,70 m. <br>
+	</div>
+	<div id="sQ4" class="ruta2">
+		<h4>Fråga 4:</h4>
+		<label class="shoes">Vilken skostorlek har jag? </label><br>
+		<button class="btn btn-secondary shoe" value="felShoeEtt">35</button>
+		<button class="btn btn-secondary shoe" value="rattShoe" id="rattShoe">36</button>
+		<button class="btn btn-secondary shoe" value="felShoeTva">37</button>
+		<button class="btn btn-secondary shoe" value="felShoeTre">38</button>
+		<br><br>
+	</div>
+	<div id="sQ5" class="ruta2">
+		<h4>Fråga 5:</h4>
+		<label class="sibling">Har jag något syskon? </label><br>
+		<input type="radio" name="sibling" value="ratt" id="rattSibling"> Ja <br>
+		<input type="radio" name="sibling" value="fel"> Nej <br>
+	</div>
+	<div id="sQ6" class="ruta2">
+		<h4>Fråga 6:</h4>
+		<label class="glas">Vad har Ida för styrka i sina glasögon? </label><br>
+		<input type="radio" name="glas" value="rattglass" id="rattGlas"> +0.75 <br>
+		<input type="radio" name="glas" value="felglasett"> +1.25 <br>
+		<input type="radio" name="glas" value="felglastvå"> -0.75 <br>
+	</div>
+	<div id="sQ7" class="ruta2">
+		<h4>Fråga 7:</h4>
+		<label class="barn">Hur många olika barngrupper tränar Ida i gymnastik? </label><br>
+		<input type="radio" name="barn" value="felbarnett"> 3 <br>
+		<input type="radio" name="barn" value="rattbarn" id="rattBarn"> 2 <br>
+		<input type="radio" name="barn" value="felbarntva"> 1 <br>
+	</div>
+	<div id="sQ8" class="ruta2">
+		<h4>Fråga 8:</h4>
+		<label class="tand">Hur många tänder har jag? </label><br>
+		<input type="radio" name="barn" value="feltandnett"> 26 <br>
+		<input type="radio" name="barn" value="ratttand" id="rattTand"> 28 <br>
+		<input type="radio" name="barn" value="feltandtva"> 32 <br>
+	</div>
+	<div id="sQ9" class="ruta2">
+		<h4>Fråga 9:</h4>
+		<label class="ben">Vilket av följande ben i kroppen bröt jag när jag trillade ner från en soffa vid 4 års ålder? </label><br>
+		<input type="radio" name="ben" value="rattben" id="rattBen"> Nyckelben <br>
+		<input type="radio" name="ben" value="felbennett"> Lårben <br>
+		<input type="radio" name="ben" value="felbentva"> Näsben <br>
+	</div>
+	<div id="sQ10" class="ruta2">
+		<h4>Fråga 10:</h4>
+		<label class="yeet">Hur bra Quiz var inte det här då? </label><br>
+		<button class="btn btn-secondary" value="rattyeey" id="rattYeet">10/10</button>
+		<br><br>
+	</div>
+	<div id="ratta" class="ruta3">
+		<button class="btn btn-success">Rätta</button>
+		<br><br>
+		<p id="rattSvar"></p>
+	</div>
+
+	<!-- JavaScript från bootstrap -->
+	<!-- jQuery, Popper.js, och Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	
+	<script src="script.js"></script>
+
+</body>
+</html>
