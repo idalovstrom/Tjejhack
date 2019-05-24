@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+
+	<!-- Taget ifrån Bootsrtap för att få finare allt -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Quiz</title>
+
+</head>
+<body class="container bg">
+	<div class="ruta">
+		<h1 class="mitten">Quiz om Python!</h1>
+		<h5 class="mitten">Ett grundläggande frågor om python</h5>
+		<br>
+		<div class="mitten">
+			<button class="btn btn-success fint">Starta Quiz</button>
+		</div>
+	</div>
+	<div id="sQ1" class="ruta">
+		<h4>Fråga 1:</h4>
+		<label class="namn">Programspråket Python har fått sitt namn från...</label><br>
+		<input type="radio" name="namn" value="felNamnEtt"> Ormen<br>
+		<input type="radio" name="namn" value="rattNamn" id="rattNamn"> Monty Python<br>
+		<input type="radio" name="namn" value="felNamnTva"> Lukten <br>
+	</div>
+	<div id="sQ2" class="ruta2">
+		<h4>Fråga 2:</h4>
+		<label class="bdayen">Vilket bibliotek använder man när man ritar med Python?</label><br>
+		<button class="btn btn-secondary bday" value="rattBday" id="rattAlder">Turtle</button>
+		<button class="btn btn-secondary bday" value="felBdayEtt">Paint</button>
+		<button class="btn btn-secondary bday" value="felBdayTva">Draw</button>
+		<br><br>
+	</div>
+	<div id="sQ3" class="ruta2">
+		<h4>Fråga 3:</h4>
+		<label class="langd">Vilken typ av programmering gör man med Python?</label><br>
+		<input type="radio" name="langd" value="felLangdEtt"> Blockprogrammering<br>
+		<input type="radio" name="langd" value="felLangdTva"> Analog programmering<br>
+		<input type="radio" name="langd" value="rattlangd" id="rattLangd"> Textprogrammering<br>
+	</div>
+
+<div id="ratta" class="ruta3">
+	<button class="btn btn-success">Rätta</button>
+	<br><br>
+	<p id="rattSvar"></p>
+</div>
+
+<!-- JavaScript från bootstrap -->
+<!-- jQuery, Popper.js, och Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
